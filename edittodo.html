@@ -1,0 +1,126 @@
+ <!DOCTYPE html>
+  <html>
+    <head>
+    	<title>Edit To-Do's</title>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="materialize.min.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="index.css"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+    	<nav class="blue z-depth-2 ">
+    		<div class="nav wrapper">
+    			<div class="container">
+    				<a href="" class="brand-logo-fixed center blue white-text" style="font-weight: bold;margin-left: 85px;">Project To-Do</a>
+    				<!-- <a href="" class="button-collapse show-on-large" data-activates="sidenav"><i class="material-icons">menu</i></a> -->
+    				 <ul class="right hide-on-small-and-down collection"  style="margin:0px; border:0px solid transparent"> 
+    					<li class="collection-item avatar" style="background: transparent; margin:0px">
+    						<a href=""><i class="material-icons white blue-text circle">notifications_active</i></a>
+    					</li>
+    				</ul>
+    				<!-- side nav-bar start -->
+    			<ul id="slide-out" class="sidenav sidenav-fixed">
+    					<li><div class="user-view">
+     		<div class="background">
+        		<img src="th2.jpg" width="300px">
+     		</div>
+      			<a href="#user"><img class="circle" src="riz.jpg"></a>
+      			<a href="#name"><span class="white-text name" style="font-weight: bold;">Rizwan Ullah</span></a>
+      			<a href="#email"><span class="white-text email" style="font-weight: bold;">rizwanullah1200300@gmail.com</span></a>
+   			</div></li>
+    				<li><a href="myday.html"><i class="medium material-icons blue-text ">settings_applications</i>My Day</a></li>
+    				<li><a href="myday.html"><i class="medium material-icons blue-text ">star</i>Important</a></li>
+    				<li><a href="myday.html"><i class="medium material-icons blue-text ">star</i>Tasks</a></li>
+    				<li><div class="divider"></div></li>
+    				<li><a href="myday.html"><i class="medium material-icons blue-text ">storage</i>Tasks</a></li>
+    			</ul>
+  					<a href="#" data-target="slide-out" class="sidenav-trigger show-on-large"><i class="material-icons">menu</i></a>
+    			</div>
+    		</div>
+    	</nav>
+<!-- form start -->
+    	 <div class="container">
+            <!-- <div class="imagebg"></div> -->
+            <div class="container" style="background-color: #7B25FC;">
+                <div class="form-container z-depth-2">
+                	<div>
+	<ul class="right  collection"  style="margin-left:1200px; border:0px solid transparent">
+		<li><a href="myday.html"><i class="small material-icons white-text ">arrow_back</i></a></li>
+	</ul>
+</div>
+
+                    <h3 class="white-text center" style="font-weight: bold;">Edit Todo</h3> 
+                    <div class="row">
+                        <form class="col s12 l12" id="reused_form">
+                            <div class="row">
+                                <div class="input-field col s12 center">
+          							<i class="small material-icons white-text prefix">mode_edit</i>
+          							<input id="icon_prefix white-text" type="text" class="validate" style="color: white;">
+          							<label for="icon_prefix" style="color: white;">Title</label>
+       						    </div>
+                            </div>
+                            <div class="row">
+                               <div class="input-field col s12 center">
+          							<i class="small material-icons white-text prefix">location_on</i>
+          							<input id="icon_prefix white-text" type="text" class="validate"  style="color: white;">
+          							<label for="icon_prefix"  style="color: white;">Location</label>
+       						    </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12 center">
+          							<i class="small material-icons white-text prefix">create</i>
+          							<input id="icon_prefix white-text" type="text" class="validate"  style="color: white;">
+          							<label for="icon_prefix"  style="color: white;">Description</label>
+       						    </div>
+                            </div>
+                            <div class="center">
+                                <button class="waves-effect waves-light btn submitbtn blue white-text collapsible container" type="submit" style="font-weight: bold;">UPDATE</button>
+                            </div>
+                        </form>
+                        <div id="error_message" style="width:100%; height:100%; display:none; ">
+                            <h4>
+                                Error
+                            </h4>
+                            Sorry there was an error sending your form. 
+                        </div>
+                        <div id="success_message" style="width:100%; height:100%; display:none; ">
+                            <h4>
+                                Success! Your Message was Sent Successfully.
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>    	
+          
+<!-- <div class="fixed-action-btn">
+	<a href="" class="btn-floating btn-large blue white-text pulse"><i class="material-icons">add</i></a>
+</div> -->
+
+
+      <!--JavaScript at end of body for optimized loading-->
+      <script type="text/javascript" src="jquery.js"></script>
+      <script type="text/javascript" src="materialize.min.js"></script>
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems, options);
+  });
+
+  // Initialize collapsible (uncomment the lines below if you use the dropdown variation)
+  // var collapsibleElem = document.querySelector('.collapsible');
+  // var collapsibleInstance = M.Collapsible.init(collapsibleElem, options);
+
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
+      </script>
+    </body>
+  </html>
+        
